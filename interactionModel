@@ -1,0 +1,93 @@
+// intent
+
+{
+  "intents": [
+    {
+      "slots": [
+        {
+          "name": "category",
+          "type": "GENRE"
+        }
+      ],
+      "intent": "getBestSellerByCategory"
+    },
+    {
+      "slots": [
+        {
+          "name": "authorName",
+          "type": "AMAZON.Author"
+        }
+      ],
+      "intent": "getBestSellerByAuthor"
+    },
+    {
+      "intent": "getBookRecommendation"
+    },
+    {
+      "intent": "getBookSummary"
+    },
+    {
+      "intent": "help"
+    },
+    {
+      "intent": "stop"
+    }
+  ]
+}
+
+
+// custom slot type
+
+GENRE
+Science fiction
+Satire
+Drama
+Action and Adventure
+Romance
+Mystery
+Horror
+Self help
+Health
+Guide
+Travel
+Children's
+Religion, Spirituality & New Age
+Science
+History
+Math
+Anthology
+Poetry
+Encyclopedias
+Dictionaries
+Comics
+Art
+Cookbooks
+Diaries
+Journals
+Prayer books
+Series
+Trilogy
+Biographies
+Autobiographies
+Fantasy
+
+
+// Sample Utterances
+
+getBestSellerByCategory recommend me a book in {category}
+getBestSellerByCategory which book should I read in {category}
+getBestSellerByCategory best seller in {category}
+getBestSellerByCategory best {category} novels
+getBestSellerByAuthor best seller by {authorName}
+getBestSellerByAuthor recommend me a book by {authorName}
+getBestSellerByAuthor which book to read by {authorName}
+getBestSellerByAuthor best novel by {authorName}
+getBestSellerByAuthor {authorName} top novel
+getBookRecommendation recommend me a book
+getBookRecommendation which book should I read
+getBookSummary tell me more about the book
+getBookSummary give me it's summary
+help Help
+help give me options
+stop Stop
+stop bye
